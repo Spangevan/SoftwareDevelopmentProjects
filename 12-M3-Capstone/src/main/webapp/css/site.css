@@ -1,0 +1,307 @@
+body {
+	background-color: #2E5272;
+	color: #17234D;
+	font-size: 100%;
+	font-family: 'Palanquin Dark', sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 1rem;
+}
+
+form#survey {
+    display: block;
+    text-align: center;
+    margin-top: 0em;
+    margin-left: 25%;
+}
+
+
+select#parkCode {
+    width: 100%;
+} 
+
+
+select#state {
+    width: 100%;
+}
+
+input#emailAddress {
+        width: 100%;
+
+}
+
+h2 {
+	margin-left: 38%;
+	width: 100%;
+}
+
+a:-webkit-any-link {  /* retrieved webkit selector from google chrome. learned that it shouldnt necessarily be used in a final product? */
+    color: #2B3358;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+
+
+.weather:first-child {
+	display: inline-grid;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.weather:first-child img {
+	display: inline-grid;
+	width: 240px;
+}
+
+.weather img {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.weather {
+	display: inline-grid;
+	text-align: center;
+	width: 18%;
+}
+
+#forecastMessage {
+	display: inline:block;
+	width: 20%;
+	text-align: -webkit-center;
+	margin-left: 14px;
+}
+
+.parknameQuote h1 {
+	margin-bottom: -5px;
+}
+
+#quote, #parkDescription, #generalParkInfo, #parkDetails {
+	margin-bottom: 10px;
+}
+
+.chooseTemp {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.weatherDetails {
+	padding-left: 40px;
+}
+
+#submit {
+	margin-left: 180px;
+}
+
+#inspirationalQuote {
+	font-style: italic;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.surveyForm {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.parkInfo img {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+	height: 30em;
+}
+
+.homepagePark img {
+	width: 400px;
+	justify-self: start;
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+
+.surveyResult img {
+	width: 400px;
+	justify-self: start;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.surveyResult {
+	display: flex;
+	border-bottom: 2px solid;
+}
+
+.surveyResult:last-child {
+	border-bottom: none;
+}
+
+.surveydisplay {
+	display: flex;
+	border-bottom: 2px solid red;
+}
+
+.surveydisplay #surveyImage {
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+.surveydisplay #surveyparkName {
+	margin-left: 50px;
+	margin-right: 250px;
+}
+
+.surveydisplay #surveyparkVote {
+	margin-left: -30px;
+}
+
+#voteforpark {
+	margin-right: auto;
+	margin-left: auto;
+	color:#17234D;
+	width:33%;
+	
+	background-color:#36696D;
+}
+
+.homepageParkName p {
+	margin-top: -0.08px;
+}
+
+.homepagePark {
+	display: flex;
+	border-bottom: 1px solid;
+}
+
+.homepagePark:last-child {
+	border-bottom: none;
+}
+
+.column {
+  --columns: 8; 
+  --width-default: 0; 
+  --width: var(--width-default); 
+  
+  background-color: #36696D;
+  border: #2B3358 2px solid;
+  border-radius: 8px;
+  padding: 16px;
+  flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+.row {
+  --columns: 8;
+  --width-default: 0; 
+  --width: var(--width-default); 
+  border-radius: 8px;
+  padding: 16px;
+  flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+
+@media (min-width: 576px) { /* @media used for display on different types of devices */
+  .column {
+    --width: var(--width-desktop, var(--width-mobile, var(--width-default)));
+  }
+}
+
+
+.header {
+  --width-mobile: 12;
+      
+}
+
+header img{
+	    width: 100%;
+}
+
+#copyright{
+	text-align:center;
+	font-weight:bold;
+}
+
+.content {
+  --width-mobile: 12;
+  --width-desktop: 8;
+  justify-self: start;
+}
+
+
+.topnav {
+	overflow: hidden;
+	background-color: #2E5272;
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: Teal;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #2196F3;
+	color: white;
+}
+
+.topnav .search-container {
+	float: right;
+}
+
+.topnav input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+	background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav .search-container {
+		float: none;
+	}
+	.topnav a, .topnav input[type=text], .topnav .search-container button {
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	}
+	.topnav input[type=text] {
+		border: 1px solid #ccc;
+	}
+}
